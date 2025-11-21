@@ -14,9 +14,20 @@ BASE_DIR = Path(__file__).resolve().parents[1] / "data"
 
 
 def get_today_folder():
-    today_str = date.today().strftime("%Y%m%d")  # e.g. 20251113
+    today = date.today()
+    today_str = today.strftime("%Y%m%d")
+    today_folder = os.path.join(BASE_DIR, today_str)
 
-    return os.path.join(BASE_DIR, today_str)
+    if os.path.isdir(today_folder):
+        return today_folder
+
+    # Fall back to yesterday if today's folder doesn't exist
+    yesterday = today - timedelta(days=1)
+    yesterday_str = yesterday.strftime("%Y%m%d")
+    yesterday_folder = os.path.join(BASE_DIR, yesterday_str)
+
+    if os.path.isdir(yesterday_folder):
+        return yesterday_folder
 
 
 def find_csv_with_prefix(folder, prefix):
