@@ -1,9 +1,9 @@
 import os
 import glob
 from datetime import date, timedelta
-
+import requests
 import re
-
+from io import BytesIO
 from single_dashboard import make_dashboard
 import pandas as pd
 import streamlit as st
@@ -12,6 +12,16 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
 
 
+url = "https://play-lh.googleusercontent.com/m3a7lbOgH4dSrn1eP5MvXef0MiWlnR_4B6zvsuyrvUxTgS4WC-jI2pd8FN5E-PL0tQ=w240-h480-rw"
+response = requests.get(url)
+icon = Image.open(BytesIO(response.content))
+
+
+st.set_page_config(
+    page_title="Aldi Price Analysis",
+    page_icon=icon,
+    layout="wide",
+)
 
 def get_today_folder():
     today = date.today()
@@ -19,6 +29,8 @@ def get_today_folder():
     today_folder = os.path.join(BASE_DIR, today_str)
 
     if os.path.isdir(today_folder):
+        # Today’s folder exists
+        st.header(f"Data last updated: {today.strftime('%B %d, %Y')}")
         return today_folder
 
     # Fall back to yesterday if today's folder doesn't exist
@@ -27,6 +39,7 @@ def get_today_folder():
     yesterday_folder = os.path.join(BASE_DIR, yesterday_str)
 
     if os.path.isdir(yesterday_folder):
+        st.header(f"Data last updated: {yesterday.strftime('%B %d, %Y')}")
         return yesterday_folder
 
 
@@ -35,7 +48,7 @@ def find_csv_with_prefix(folder, prefix):
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
-st.write("Today is", date.today().strftime("%Y%m%d"))
+
 
 folder_today = get_today_folder()
 
