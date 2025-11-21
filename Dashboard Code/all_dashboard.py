@@ -7,7 +7,7 @@ from io import BytesIO
 from single_dashboard import make_dashboard
 import pandas as pd
 import streamlit as st
-
+from PIL import Image
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
 
