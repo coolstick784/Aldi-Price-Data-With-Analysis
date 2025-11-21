@@ -18,7 +18,7 @@ icon = Image.open(BytesIO(response.content))
 
 
 st.set_page_config(
-    page_title="Aldi Price Analysis",
+    page_title="Aldi Price Browser",
     page_icon=icon,
     layout="wide",
 )
@@ -237,6 +237,22 @@ st.markdown(
         overflow-y: auto;
         padding-right: 4px;
     }}
+
+    /* Default (light mode): dark text */
+    .price-card-brand,
+    .price-card-name,
+     .current-price {{
+        color: #111827;
+    }}
+
+    /* Dark mode: force brand + name to white */
+    @media (prefers-color-scheme: dark) {{
+        .price-card-brand,
+        .price-card-name,
+        .current-price {{
+            color: #ffffff !important;
+        }}
+    }}
     </style>
     """,
     unsafe_allow_html=True,
@@ -294,14 +310,14 @@ def render_price_cards(df, kind: str):
                 box-shadow:0 1px 3px rgba(0,0,0,0.06);
                 background-color:white;
             ">
-              <div style="font-weight:600;margin-bottom:2px;">
+            <div class="price-card-brand" style="font-weight:600;margin-bottom:2px;">
                 {brand}
-              </div>
-              <div style="font-size:20px;margin-bottom:4px;">
+            </div>
+            <div class="price-card-name" style="font-size:20px;margin-bottom:4px;">
                 {name}
-              </div>
+            </div>
 
-              <div style="margin-top:4px;font-size:20px;">
+              <div class="current-price" style="margin-top:4px;font-size:20px;">
                 <span>Current:</span>
                 <span style="font-weight:600;">${latest_price:.2f}</span>
                 <span style="font-size:16px;color:#6b7280;">

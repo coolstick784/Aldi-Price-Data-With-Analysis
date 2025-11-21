@@ -25,6 +25,27 @@ h1, h2, h3 { margin: 0.1rem 0 0.6rem 0; }
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+/* Default: light mode → black text */
+.card-title,
+.card-subtitle,
+.card-price {
+    color: #000000;
+}
+
+/* Dark mode → white text */
+@media (prefers-color-scheme: dark) {
+    .card-title,
+    .card-subtitle,
+    .card-price {
+        color: #ffffff !important;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 def make_dashboard(brand,name):
     brand = brand.replace("(no brand)", '')
     prices = get_prices(brand, name)
@@ -80,14 +101,20 @@ def make_dashboard(brand,name):
                 msg = f"It’s the lowest price since at least {START_FALLBACK.strftime('%B %d, %Y')}."
 
 
-        # ---- LAYOUT: everything inside the card
         html = f"""
         <div class="card">
-        <h1>{brand} {name} (Approximate Weight: {cur_weight})</h1>
-        <h2 style="margin-bottom:0">
+        <h1 style="color:#000000;">
+            {brand} {name} (Approximate Weight: {cur_weight})
+        </h1>
+        <h2 style="margin-bottom:0;color:#000000;">
             Current price (as of {cur_date}): 
-            <span style="font-weight:900;">${cur_price:,.2f}</span>
+            <span style="font-weight:900;color:#000000;">
+                ${cur_price:,.2f}
+            </span>
+        </h2>
+        </div>
         """
+
 
         if avg_30 is not None and avg_30 != 0:
             diff_pct = (cur_price - avg_30) / avg_30 * 100
