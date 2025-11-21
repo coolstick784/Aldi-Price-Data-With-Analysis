@@ -158,28 +158,19 @@ query = st.text_input(
 
 
 def product_matches_tokens(product_tokens: set[str], query_tokens: set[str]) -> bool:
-    """
-    Return True if every query token has at least one matching product token.
-
-    Matching rules:
-    - case-insensitive (handled by normalize_text_to_tokens)
-    - for short words (len <= 3): require exact match
-    - for longer words: allow partial match via prefix in either direction
-      e.g., 'fillet' matches 'fillets' and vice versa
-    """
     if not query_tokens:
         return False
 
     for q in query_tokens:
         found_for_q = False
         for t in product_tokens:
-            if len(q) <= 3:
-                # short words: exact match only
-                if t == q:
-                    found_for_q = True
-                    break
-            else:
-                # longer words: prefix-based partial match
+            # exact match always allowed
+            if t == q:
+                found_for_q = True
+                break
+
+            # partial match only if both are reasonably long
+            if len(q) >= 4 and len(t) >= 4:
                 if t.startswith(q) or q.startswith(t):
                     found_for_q = True
                     break
