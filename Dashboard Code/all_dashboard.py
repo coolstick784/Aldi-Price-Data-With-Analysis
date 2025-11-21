@@ -15,6 +15,7 @@ BASE_DIR = Path(__file__).resolve().parents[1] / "data"
 
 def get_today_folder():
     today_str = date.today().strftime("%Y%m%d")  # e.g. 20251113
+
     return os.path.join(BASE_DIR, today_str)
 
 
@@ -23,7 +24,7 @@ def find_csv_with_prefix(folder, prefix):
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
-
+st.write("Today is", date.today().strftime("%Y%m%d"))
 
 folder_today = get_today_folder()
 
