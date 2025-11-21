@@ -171,14 +171,20 @@ def product_matches_tokens(product_tokens: set[str], query_tokens: set[str]) -> 
 
             # partial match only if both are reasonably long
             if len(q) >= 4 and len(t) >= 4:
+                # require prefix match in either direction
                 if t.startswith(q) or q.startswith(t):
-                    found_for_q = True
-                    break
+                    # and require at least 80% length overlap
+                    shorter = min(len(q), len(t))
+                    longer = max(len(q), len(t))
+                    if shorter / longer >= 0.8:
+                        found_for_q = True
+                        break
 
         if not found_for_q:
             return False
 
     return True
+
 
 
 if query.strip():
