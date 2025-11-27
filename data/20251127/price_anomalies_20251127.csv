@@ -1,0 +1,22 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+NATURE'S NECTAR,"Sparkling Coconut Water & Pineapple, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+NATURE'S NECTAR,"Sparkling Coconut Water & Watermelon, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+NATURE'S NECTAR,"Sparkling Coconut Water, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Chocolate Chip Cannoli Dip, 10 oz",10 oz,2025-11-27,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PARK STREET DELI,"Salted Caramel Cannoli Dip, 10 oz",10 oz,2025-11-27,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+STONEMILL,"Pure Vanilla Extract, 2 fl oz",2 fl oz,2025-11-27,4.29,4.75,-9.68,lower_vs_30d_median,model_30d_unique
+(no brand),"5"" Holiday Cactus, assorted colors",1 ea,2025-11-19,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Autumn Crisp Grapes, 2 lb Bag",2 lb,2025-11-27,6.59,5.99,10.02,higher_vs_30d_median,model_30d_unique
+(no brand),"Blackberries, 6 oz",6 oz,2025-11-27,1.99,2.55,-21.96,lower_vs_30d_median,model_30d_unique
+(no brand),"Brussels Sprouts, 1 lb",1 lb,2025-11-27,1.99,3.19,-37.62,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"Cauliflower Crowns, each",1 each,2025-11-27,3.29,3.55,-7.32,lower_vs_30d_median,model_30d_unique
+(no brand),"Cherub Grape Tomatoes, 10 oz",10 oz,2025-11-27,2.19,2.45,-10.61,lower_vs_30d_median,model_30d_unique
+(no brand),"Cranberries, 12 oz",12 oz,2025-11-27,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+(no brand),"French Green Beans, 1 lb",1 lb,2025-11-27,2.39,3.19,-25.08,lower_vs_30d_median,model_30d_unique
+(no brand),"Fresh 80% Lean 20% Fat Ground Beef, per lb",2 lb,2025-11-27,9.98,10.98,-9.11,lower_vs_30d_median,model_30d_unique
+(no brand),"Fresh Organic Strawberries, 1 lb",1 lb,2025-11-27,5.85,4.85,20.62,higher_vs_30d_median,model_30d_unique
+(no brand),"Iceberg Lettuce, each",1 each,2025-11-27,2.75,2.39,15.06,higher_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",3 lb,2025-11-27,2.99,3.77,-20.69,lower_vs_30d_median,model_30d_unique
+(no brand),"Mango, each",1 each,2025-11-27,0.99,1.25,-20.8,lower_vs_30d_median,model_30d_unique
+(no brand),"Mini Cucumbers, 1 lb",1 lb,2025-11-27,2.09,1.89,10.58,higher_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2025-11-27,4.65,3.75,24.0,higher_vs_30d_median,model_30d_unique
