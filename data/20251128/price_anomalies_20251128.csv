@@ -1,0 +1,16 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+KIRKWOOD,"Split Chicken Breasts, per lb",4.35 lb,2025-11-28,8.66,5.37,61.27,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+NATURE'S NECTAR,"Sparkling Coconut Water & Pineapple, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+NATURE'S NECTAR,"Sparkling Coconut Water & Watermelon, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+NATURE'S NECTAR,"Sparkling Coconut Water, 12 fl oz",12 fl oz,2025-11-24,0.89,0.99,-10.1,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Chocolate Chip Cannoli Dip, 10 oz",10 oz,2025-11-28,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PARK STREET DELI,"Salted Caramel Cannoli Dip, 10 oz",10 oz,2025-11-28,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+STONEMILL,"Pure Vanilla Extract, 2 fl oz",2 fl oz,2025-11-28,4.29,4.75,-9.68,lower_vs_30d_median,model_30d_unique
+(no brand),"5"" Holiday Cactus, assorted colors",1 ea,2025-11-19,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Black Angus Beef Choice Boneless Ribeye Steak, per lb",1.16 lb,2025-11-28,18.43,14.7,25.37,higher_vs_30d_median,model_30d_unique
+(no brand),"Blackberries, 6 oz",6 oz,2025-11-28,1.99,2.55,-21.96,lower_vs_30d_median,model_30d_unique
+(no brand),"Cherub Grape Tomatoes, 10 oz",10 oz,2025-11-28,2.19,2.45,-10.61,lower_vs_30d_median,model_30d_unique
+(no brand),"Fresh 80% Lean 20% Fat Ground Beef, per lb",2 lb,2025-11-28,9.98,10.98,-9.11,lower_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",nan,2025-11-28,2.99,3.77,-20.69,lower_vs_30d_median,model_30d_unique
+(no brand),"Mango, each",1 each,2025-11-28,0.99,1.25,-20.8,lower_vs_30d_median,model_30d_unique
+(no brand),"Mini Cucumbers, 1 lb",1 lb,2025-11-28,2.09,1.89,10.58,higher_vs_30d_median,model_30d_unique
