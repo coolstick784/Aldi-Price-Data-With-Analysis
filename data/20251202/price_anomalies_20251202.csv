@@ -1,0 +1,11 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+KIRKWOOD,"Split Chicken Breasts, per lb",4.35 lb,2025-12-02,8.66,5.37,61.27,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+PARK STREET DELI,"Chocolate Chip Cannoli Dip, 10 oz",10 oz,2025-12-02,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PARK STREET DELI,"Salted Caramel Cannoli Dip, 10 oz",10 oz,2025-12-02,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+(no brand),"5"" Holiday Cactus, assorted colors",1 ea,2025-11-19,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2025-12-02,1.99,2.55,-21.96,lower_vs_30d_median,model_30d_unique
+(no brand),"Cherub Grape Tomatoes, 10 oz",10 oz,2025-12-02,2.19,2.45,-10.61,lower_vs_30d_median,model_30d_unique
+(no brand),"Fresh 80% Lean 20% Fat Ground Beef, per lb",2 lb,2025-12-02,9.98,10.98,-9.11,lower_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",3 lb,2025-12-02,2.99,3.77,-20.69,lower_vs_30d_median,model_30d_unique
+(no brand),"Mango, each",1 each,2025-12-02,0.99,1.25,-20.8,lower_vs_30d_median,model_30d_unique
+(no brand),"Mini Cucumbers, 1 lb",1 lb,2025-12-02,2.09,1.89,10.58,higher_vs_30d_median,model_30d_unique
