@@ -1,0 +1,9 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+PARK STREET DELI,"Chocolate Chip Cannoli Dip, 10 oz",10 oz,2025-12-04,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PARK STREET DELI,"Salted Caramel Cannoli Dip, 10 oz",10 oz,2025-12-04,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+(no brand),"5"" Holiday Cactus, assorted colors",1 ea,2025-11-19,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Bartlett Pears, 3 lb",3 lb,2025-12-04,2.99,3.69,-18.97,lower_vs_30d_median,model_30d_unique
+(no brand),"Blueberries, 1 pint",1 pt,2025-12-04,2.49,2.99,-16.72,lower_vs_30d_median,model_30d_unique
+(no brand),"Granny Smith Apples, 3 lb",3 lb,2025-12-04,2.99,3.49,-14.33,lower_vs_30d_median,model_30d_unique
+(no brand),"Large Avocado, each",1 each,2025-12-04,0.55,0.7,-21.43,lower_vs_30d_median,model_30d_unique
+(no brand),"Mini Cucumbers, 1 lb",1 lb,2025-12-04,2.09,1.89,10.58,higher_vs_30d_median,model_30d_unique
