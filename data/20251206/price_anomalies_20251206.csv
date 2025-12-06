@@ -1,0 +1,24 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+BURMAN'S,"Yellow Mustard, 20 oz",20 oz,2025-12-06,0.75,0.99,-24.24,lower_vs_30d_median,model_30d_unique
+CHOCEUR,Dark Chocolate Pralines,10.58 oz,2025-12-06,5.39,5.99,-10.02,lower_vs_30d_median,model_30d_unique
+CHOCEUR,Milk Chocolate Pralines,10.58 oz,2025-12-06,5.39,5.99,-10.02,lower_vs_30d_median,model_30d_unique
+FRIENDLY FARMS,"1% Milk, 1 gal",1 gal,2025-12-06,2.59,2.49,4.02,higher_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Pepper Jack Shredded Cheese, 12 oz",12 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Shredded 2% Milk Reduced Fat Mexican Style Cheese Blend, 11 oz",11 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Shredded 2% Milk Reduced Fat Sharp Cheddar Cheese, 11 oz",11 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Shredded Colby Jack Cheese, 12 oz",12 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Shredded Mexican Cheese, 12 oz",12 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Shredded Sharp Cheddar Cheese, 12 oz",12 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Triple Cheddar Shredded Cheese, 12 oz",12 oz,2025-12-06,2.19,2.85,-23.16,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Chocolate Chip Cannoli Dip, 10 oz",10 oz,2025-12-06,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PARK STREET DELI,"Salted Caramel Cannoli Dip, 10 oz",10 oz,2025-12-06,3.29,2.47,33.2,higher_vs_30d_median,median_diff_30pct
+PEZ,"Christmas Candies, 1.74 oz",1.74 oz,2025-12-05,1.99,1.12,77.68,higher_vs_30d_median,median_diff_30pct
+(no brand),"5"" Christmas Cactus - Assorted Colors",1 ea,2025-12-06,4.99,3.74,33.42,higher_vs_30d_median,median_diff_30pct
+(no brand),"5"" Holiday Cactus, assorted colors",1 ea,2025-11-19,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"73/27 Ground Beef Roll, 3 lb",3 lb,2025-12-06,11.85,15.39,-23.0,lower_vs_30d_median,model_30d_unique
+(no brand),"Bartlett Pears, 3 lb",3 lb,2025-12-06,2.99,3.69,-18.97,lower_vs_30d_median,model_30d_unique
+(no brand),"Blueberries, 1 pint",1 pt,2025-12-06,2.49,3.14,-20.7,lower_vs_30d_median,model_30d_unique
+(no brand),"Broccoli Crowns, per lb",1 lb,2025-12-06,2.15,2.39,-10.04,lower_vs_30d_median,model_30d_unique
+(no brand),"Granny Smith Apples, 3 lb",3 lb,2025-12-06,2.99,3.49,-14.33,lower_vs_30d_median,model_30d_unique
+(no brand),Holiday Kalanchoe - Assorted Colors,1 ea,2025-12-06,8.99,6.74,33.38,higher_vs_30d_median,median_diff_30pct
+(no brand),"Large Avocado, each",1 each,2025-12-06,0.55,0.7,-21.43,lower_vs_30d_median,model_30d_unique
