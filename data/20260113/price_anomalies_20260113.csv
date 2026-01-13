@@ -1,0 +1,57 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+BAKE SHOP,"Pumpkin Cake Roll, 18 oz",18 oz,2026-01-02,0.55,1.35,-59.26,lower_vs_30d_median,median_diff_30pct
+BAKER'S CORNER,"Canned 100% Pure Pumpkin, 15 oz",15 oz,2026-01-13,1.29,1.15,12.17,higher_vs_30d_median,model_30d_unique
+BENNER,"Tea Gift Box, 48 count",48 count,2025-12-26,1.49,3.74,-60.16,lower_vs_30d_median,median_diff_30pct
+BENTON'S,Candy Cane Cremes,15.25 oz,2025-12-29,0.95,2.35,-59.57,lower_vs_30d_median,median_diff_30pct
+BENTON'S,Continental Cookie Assortment,17.64 oz,2025-12-30,2.75,5.77,-52.34,lower_vs_30d_median,median_diff_30pct
+BENTON'S,Hazelnut Mini Waffle Cone,4.23 oz,2025-12-30,1.05,2.62,-59.92,lower_vs_30d_median,median_diff_30pct
+BETTY CROCKER,Blue Cookie Icing,7 oz,2026-01-13,0.95,2.3,-58.7,lower_vs_30d_median,median_diff_30pct
+BETTY CROCKER,"Green Cookie Icing, 7 oz",7 oz,2026-01-13,0.95,2.3,-58.7,lower_vs_30d_median,median_diff_30pct
+BETTY CROCKER,"Red Cookie Icing, 7 oz",7 oz,2026-01-13,0.95,2.3,-58.7,lower_vs_30d_median,median_diff_30pct
+BETTY CROCKER,"White Cookie Icing, 7 oz",7 oz,2026-01-13,0.95,2.3,-58.7,lower_vs_30d_median,median_diff_30pct
+CHEF'S CUPBOARD,"Condensed Cream of Mushroom Soup, 10.5 oz",10.5 oz,2026-01-13,0.79,0.7,12.86,higher_vs_30d_median,model_30d_unique
+CHOCEUR,Dark Chocolate Pralines,10.58 oz,2025-12-27,1.49,3.44,-56.69,lower_vs_30d_median,median_diff_30pct
+CHOCEUR,"Holiday Assorted Chocolate Gift Box, 1.83 oz",1.83 oz,2025-12-28,0.69,2.49,-72.29,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHOCEUR,"Holiday Truffles Assorted Flavor, 2.29 oz",2.29 oz,2025-12-26,0.69,1.84,-62.5,lower_vs_30d_median,median_diff_30pct
+CHOCEUR,"Holiday Variety Pack Nut Chocolates, 10.5 oz",10.5 oz,2025-12-27,2.49,8.49,-70.67,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHOCEUR,Milk Chocolate Pralines,10.58 oz,2025-12-27,1.49,3.44,-56.69,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,Dark Drizzled Kettle Corn,5 oz,2025-12-27,0.65,1.6,-59.38,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,"Mistletoe Snack Mix Gift Box, 8 oz",8 oz,2026-01-02,0.55,1.39,-60.43,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,Peppermint Flavored Kettle Corn,5 oz,2025-12-27,0.65,1.6,-59.38,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,Peppermint Pretzel Stars,7 oz.,2026-01-01,0.85,2.07,-58.94,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,"Pretzel Rings, 16 oz",16 oz.,2026-01-13,0.25,0.55,-54.55,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,"Pretzels Gift Box, 8 oz",8 oz,2026-01-02,0.55,1.39,-60.43,lower_vs_30d_median,median_diff_30pct
+FRIENDLY FARMS,"Extra Creamy Whipped Dairy Topping, 13 oz",13 oz,2026-01-13,2.49,2.25,10.67,higher_vs_30d_median,model_30d_unique
+FRIENDLY FARMS,"Whipped Dairy Topping, 13 oz",13 oz,2026-01-13,2.49,2.25,10.67,higher_vs_30d_median,model_30d_unique
+HAPPY HARVEST,"Canned Cut Green Beans, 14.5 oz",14.5 oz,2026-01-13,0.85,0.55,54.55,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+KIRKWOOD,"Split Chicken Breasts, per lb",4.35 lb,2026-01-13,8.66,5.37,61.27,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+L'OVEN FRESH,"Multigrain Harvest Bagels, 6 count",20 oz,2026-01-08,0.29,0.69,-57.97,lower_vs_30d_median,median_diff_30pct
+L'OVEN FRESH,"Pumpkin Bagels, 6 count",20 oz,2026-01-08,0.29,0.69,-57.97,lower_vs_30d_median,median_diff_30pct
+LITTLE DEBBIE,"Christmas Tree Cakes, 8.62 oz",8.62 oz,2025-12-26,0.79,2.69,-70.63,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+MILLVILLE,"Sweet & Salty Nut Cashew Granola Bars, 6 count",6 ct.,2026-01-13,1.25,1.87,-33.16,lower_vs_30d_median,median_diff_30pct
+MILLVILLE,"Sweet & Salty Nut Peanut, Almond & Dark Chocolate Chunk Bars, 6 count",6 ct,2026-01-13,1.25,1.87,-33.16,lower_vs_30d_median,median_diff_30pct
+MILLVILLE,"Sweet and Salty Nut Chocolatey Pretzel and Almond Granola Bars, 6 count",6 ct,2026-01-13,1.25,1.87,-33.16,lower_vs_30d_median,median_diff_30pct
+NABISCO,"White Fudge Oreos, 8.5 oz",8.5 oz,2026-01-13,2.19,3.29,-33.43,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+NATURE'S NECTAR,"Sparkling Apple Cider, 25.4 fl oz",25.4 fl oz,2026-01-13,1.55,2.35,-34.04,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+POPCORNOPOLIS,"Popcornopolis Snack Pack, 6 count",11.6 oz,2025-12-26,2.49,8.49,-70.67,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Basil, Black Olive, and Cheese Tapenade, 6 oz",6 oz,2026-01-13,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Cara Cara Oranges, 3 lb",3 lb,2026-01-13,2.69,4.29,-37.3,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Feta Stuffed Queen Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Green Olive Tapenade, 6 oz",6 oz,2026-01-13,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Mixed Seeds, 4.4 oz",4.4 oz,2026-01-13,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Rosemary, 4.4 oz",4.4 oz,2026-01-13,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Sea Salt & Olive Oil, 4.4 oz",4.4 oz,2026-01-13,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Jalapeno Jack Cheese Stuffed Olives, 12 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Jalapeno Jack Cheese Stuffed Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Mini Onion Brioche Toast Crackers, 2.82 oz",2.82 oz,2026-01-13,0.85,1.25,-32.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Original Mini Brioche Toast Cracker, 2.82 oz",2.82 oz,2026-01-13,0.85,1.25,-32.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Perfect Pairing Red and Green Grapes, 3 lb",3 lb,2026-01-13,6.99,7.99,-12.52,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Roasted Red Pepper Artichoke Tapenade, 6 oz",6 oz,2026-01-13,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Scalloped Cracker Black Pepper, 6.5 oz",6.5 oz,2026-01-09,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Scalloped Sea Salt Crackers, 6.5 oz",6.5 oz,2026-01-09,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"White Cheddar Cheese Stuffed Olives, 12 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"White Cheddar Cheese Stuffed Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+STONEMILL,"Brown Gravy Mix, 0.87 oz",0.87 oz,2026-01-08,0.35,0.31,12.9,higher_vs_30d_median,model_30d_unique
+STONEMILL,"Reduced Sodium Brown Gravy Mix, 0.87 oz",0.87 oz,2026-01-13,0.35,0.31,12.9,higher_vs_30d_median,model_30d_unique
+(no brand),"Fudge Iced Holiday Brownies, 13 oz",13 oz,2025-12-26,1.09,3.59,-69.64,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"Strawberries, 1 lb",1 lb,2026-01-13,3.95,4.39,-10.02,lower_vs_30d_median,model_30d_unique
