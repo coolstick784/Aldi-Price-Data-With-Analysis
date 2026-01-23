@@ -8,7 +8,7 @@ Daily scraped price data from Aldi, as well as code for a Streamlit website that
 
 \- Columns: brand, name, weight, price, date
 
-\- Source: my personal grocery scraping project
+\- Source: Grocery data from aldi.us
 
 \- Timeframe: 2025-10-09 onward
 
