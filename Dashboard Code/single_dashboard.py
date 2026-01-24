@@ -1,3 +1,6 @@
+#single_dashboard.py
+# This generates the price plot for a single item over the date range (30 days)
+
 from get_prices import get_prices
 import streamlit as st
 from datetime import timedelta, date
@@ -46,11 +49,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# This function makes a dashbaord given a brand and name
 def make_dashboard(brand,name):
     brand = brand.replace("(no brand)", '')
     prices = get_prices(brand, name)
     #st.write(prices)
-
+    # We don't have data before Oct. 9, 2025
     START_FALLBACK = date(2025, 10, 9)
 
     # Ensure proper types
@@ -61,18 +65,22 @@ def make_dashboard(brand,name):
     if prices.empty:
         st.warning("No valid prices to show.")
     else:
+        #get the current data
         hist = prices.sort_values("date")
         cur_row = hist.iloc[-1]
         cur_date = cur_row["date"]
         cur_price = float(cur_row["price"])
         cur_weight = cur_row['weight']
 
+        # get historical + average data
         window_start = cur_date - timedelta(days=30)
         last_month = hist[(hist["date"] > window_start) & (hist["date"] <= cur_date)]
         avg_30 = float(last_month["price"].mean()) if not last_month.empty else None
 
         max_price = float(hist["price"].max())
         min_price = float(hist["price"].min())
+
+        # This block of code tells the user if a price was the highest/lowest in the past X days above the plot
 
         def last_strict_breach(is_higher: bool):
             earlier = hist[hist["date"] < cur_date]
@@ -100,7 +108,7 @@ def make_dashboard(brand,name):
             else:
                 msg = f"It’s the lowest price since at least {START_FALLBACK.strftime('%B %d, %Y')}."
 
-
+        # This is the title, with the brand, name, and weight
         html = f"""
         <div class="card">
         <h1 style="color:#000000;">
@@ -115,7 +123,7 @@ def make_dashboard(brand,name):
         </div>
         """
 
-
+        # Put a subheader with an arrow and % up or down over the past 30 days
         if avg_30 is not None and avg_30 != 0:
             diff_pct = (cur_price - avg_30) / avg_30 * 100
             down = cur_price < avg_30
@@ -143,6 +151,8 @@ def make_dashboard(brand,name):
 
 
 
+    # This is for the actual graph, which is a line graph that displays the price and date on hover. 
+    # This also sets the axis labels 
     st.header("Price Plot")
 
     hist_plot = hist.copy()

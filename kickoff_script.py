@@ -1,4 +1,5 @@
 # kickoff_script.py
+# Commits the repo to github and kicks off the Aldi script
 import asyncio
 from aldi import scrape_aldi_data
 from concat_data import concat_data, get_anomalies

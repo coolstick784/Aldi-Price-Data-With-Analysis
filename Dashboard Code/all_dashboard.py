@@ -1,3 +1,6 @@
+
+#all_dashboard.py
+# This creates the overall Streamlit site
 import os
 import glob
 from datetime import date, timedelta
@@ -12,17 +15,19 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
 
 
+#This is the URL for the logo
 url = "https://play-lh.googleusercontent.com/m3a7lbOgH4dSrn1eP5MvXef0MiWlnR_4B6zvsuyrvUxTgS4WC-jI2pd8FN5E-PL0tQ=w240-h480-rw"
 response = requests.get(url)
 icon = Image.open(BytesIO(response.content))
 
-
+#Set the page config
 st.set_page_config(
     page_title="Aldi Price Browser",
     page_icon=icon,
     layout="wide",
 )
 
+# Get today's folder for today's data (or yesterday's if today's hasn't uploaded yet)
 def get_today_folder():
     today = date.today()
     today_str = today.strftime("%Y%m%d")
@@ -42,14 +47,14 @@ def get_today_folder():
         st.header(f"Data last updated: {yesterday.strftime('%B %d, %Y')}")
         return yesterday_folder
 
-
+# Find the CSV (e.g. combined_20251224_to_20260123.csv) given a prefix (e.g. combined)
 def find_csv_with_prefix(folder, prefix):
     pattern = os.path.join(folder, f"{prefix}*.csv")
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
 
-
+# Get today's folder, and then the combined + anomalies data. Stop the script if either is not found
 folder_today = get_today_folder()
 
 combined_path = find_csv_with_prefix(folder_today, "combined")
@@ -83,10 +88,12 @@ for col in ["brand", "name"]:
     if col not in combined.columns:
         combined[col] = ""
 
+# Fill NA values, and add a display field, which is the combination of brand and name
 combined["brand"] = combined["brand"].fillna("")
 combined["name"] = combined["name"].fillna("")
 combined["display"] = (combined["brand"] + " " + combined["name"]).str.strip()
 
+# Convert each product to tokens, which is basically a list of words in each product
 products = combined[["brand", "name", "display"]].drop_duplicates().reset_index(drop=True)
 def normalize_text_to_tokens(text: str):
     # lower case
@@ -137,8 +144,7 @@ anoms["latest_price"] = (
 )
 
 
-
-st.set_page_config(layout="wide")
+# Add a title, with a line and then the actual content
 st.title("Aldi Price Browser")
 
 
@@ -146,8 +152,11 @@ st.title("Aldi Price Browser")
 st.markdown("---")
 
 
+# Add a header to search products
 st.header("Search products")
 
+
+# This lets the user search for a product to see historical price data
 query = st.text_input(
     "Search by words in brand and name (order and case don’t matter, partial words allowed):",
     placeholder="e.g. chicken breast, blueberries pint, clancy and chips...",
@@ -156,7 +165,9 @@ query = st.text_input(
 
 
 
-
+# This function checks if each word in the query matches with each word in the product, or is a partial match
+# A partial match is defined if A. both the search word and product word are >= 4 characters, B. one token is contained in the other, and C. the lengths are 80% similar are more
+# For example, "holida" will match with "holiday", and "nuggetsA" will match with "nuggets"
 def product_matches_tokens(product_tokens: set[str], query_tokens: set[str]) -> bool:
     if not query_tokens:
         return False
@@ -187,6 +198,7 @@ def product_matches_tokens(product_tokens: set[str], query_tokens: set[str]) -> 
 
 
 
+# To check if a search result has any hits, each token in the query must have a match with a product
 if query.strip():
     # Turn query into token set with same rules as products
     query_tokens = normalize_text_to_tokens(query)
@@ -202,6 +214,7 @@ if query.strip():
 else:
     results = products.iloc[0:0].copy()
 
+# Print the results, and let the user select it from a selectbox
 if not results.empty:
     st.write(f"Found **{len(results)}** matching product(s).")
 
@@ -229,11 +242,13 @@ else:
         st.info("No matches found. Try changing or removing a word.")
 
 
+# Print recent price movers that have significantly increased/decreased in price
 st.header("Recent price movers (based on 30-day median)")
 
 
 LIST_HEIGHT = 300  
 
+# Here is some HTML
 st.markdown(
     f"""
     <style>
@@ -265,12 +280,14 @@ st.markdown(
 )
 
 
+
 def render_price_cards(df, kind: str):
     """
     kind = 'deal' or 'hike'
     Renders up to 30 rows from df as clickable cards.
     Clicking a card's button stores the chosen brand + name in session_state.
     """
+    # Labels deals/price hikes
     is_deal = (kind == "deal")
     color = "#16a34a" if is_deal else "#dc2626"  # green / red
     label_text = "Good deal" if is_deal else "Price hike"
@@ -286,9 +303,13 @@ def render_price_cards(df, kind: str):
     if "reason" in df.columns:
         keep_cols.append("reason")
 
+    # Only keep the top 30 deals/hikes
     df = df[keep_cols].reset_index(drop=True).head(30)
 
+    # For each deal/hike, print the information of the product onto a card, with a link to be able to view the dashboard
+    # It also displays the % difference from the median
     for i, row in df.iterrows():
+        # Gather the info into variables
         brand = row["brand"]
         name = row["name"]
         weight = row.get("weight", "")
@@ -298,6 +319,7 @@ def render_price_cards(df, kind: str):
 
         pct_str = f"{pct_diff:.0f}%"  # e.g. -33 -> "-33%"
 
+
         reason_html = ""
         if "reason" in row and pd.notna(row["reason"]):
             reason_html = f"""
@@ -306,6 +328,7 @@ def render_price_cards(df, kind: str):
             </div>
             """
 
+        #HTML to display the card
         st.markdown(
             f"""
             <div style="
@@ -341,6 +364,7 @@ def render_price_cards(df, kind: str):
             unsafe_allow_html=True,
         )
 
+        # Button for the dashboard
         if st.button(
             "View dashboard",
             key=f"{kind}_card_btn_{i}",
@@ -351,6 +375,7 @@ def render_price_cards(df, kind: str):
             st.session_state["selected_name"] = name
 
 
+# Create a column for deals/price hikes, and subheaders
 header_deal, header_hike = st.columns(2)
 with header_deal:
     st.subheader("Best deals (cheaper than usual)")
@@ -358,6 +383,7 @@ with header_hike:
     st.subheader("Biggest jumps (more expensive than usual)")
 col_deals, col_hikes = st.columns(2)
 
+# Get the dataset for deals based on the anomalies
 with col_deals:
     
     deals = (
@@ -369,7 +395,7 @@ with col_deals:
         st.write("There are no great deals right now.")
     else:
         render_price_cards(deals, kind="deal")
-
+# Get the dataset for hikes based on the anomalies
 with col_hikes:
     hikes = (
         anoms[anoms["pct_diff_vs_30d_median"] > 0]
@@ -384,6 +410,7 @@ with col_hikes:
 
 # ----------------- FULL-WIDTH DASHBOARD AREA ----------------- #
 
+# Make the dashboard with the selected product if applicable -- this occurs when a user selected "View dashboard"
 st.markdown("---")
 
 if "selected_brand" in st.session_state and "selected_name" in st.session_state:

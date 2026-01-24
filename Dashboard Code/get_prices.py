@@ -1,14 +1,18 @@
+#get_prices.py
+# This returns a dataset with historical prices given a brand and name with one function, get_prices
 import re
 import csv
 from pathlib import Path
 from datetime import datetime, date
+
+from dateutil.relativedelta import relativedelta
 import pandas as pd
 
 
 def get_prices(TARGET_BRAND, TARGET_NAME):
-
+    # set the start and end dates 
     BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
-    START = date(2025, 10, 9)
+    START = max(date(2025, 10, 9), date.today() - relativedelta(months=1))
 
 
     END = date.today()  # inclusive
@@ -92,6 +96,7 @@ def get_prices(TARGET_BRAND, TARGET_NAME):
 
 
     rows = []
+    # For each subdirectory (with one subdirectory for each date), we'll look through it to find the item and add the price to a pandas DataFrame
     for sub in sorted(BASE_DIR.iterdir(), key=lambda p: p.name):
         if not sub.is_dir():
             continue

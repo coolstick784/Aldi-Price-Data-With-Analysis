@@ -1,4 +1,5 @@
 # aldi.py
+#Scrapes the data
 import os
 import datetime
 import re
@@ -47,10 +48,12 @@ async def scrape_aldi_data(directory: str):
 
     pw, browser, context, page = await create_undetected_headless_driver()
 
+    # for each category
     for cat in categories:
         print("Scraping", cat)
         brands, names, weights, prices = [], [], [], []
 
+        # for each page in each category
 
         for p in itertools.count(1):
             url = f"https://aldi.us/products/{cat}?page={p}"
@@ -75,6 +78,7 @@ async def scrape_aldi_data(directory: str):
                 # empty page => done with this category
                 break
 
+            # these tiles contain the data we want (brand, name, weight, and price)
             for itm in items:
                 b = await itm.query_selector('.product-tile__brandname p')
                 n = await itm.query_selector('.product-tile__name p')
@@ -88,6 +92,7 @@ async def scrape_aldi_data(directory: str):
                 prices.append((await pr.inner_text()).strip() if pr else "")
 
 
+        # create and save the df
         df = pd.DataFrame({
             "brand": brands,
             "name": names,

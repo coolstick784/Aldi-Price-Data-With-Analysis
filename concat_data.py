@@ -1,8 +1,14 @@
+#concat_data.py
+# This concatenates all the Aldi data within the past 30 days between departments, adds a date field, and detects anomalies
 import os, re, glob
 import pandas as pd
-from datetime import date
 
+from datetime import date, timedelta
+import numpy as np
 
+from sklearn.ensemble import IsolationForest
+from pandas.api.types import is_categorical_dtype
+# Concatenate data
 def concat_data():
     # --- Config ---
     BASE_DIR = r"C:\Users\cools\grocery\aldi\data"
@@ -32,6 +38,7 @@ def concat_data():
     for folder in sorted(date_folders):
         for csv_path in glob.glob(os.path.join(folder, "*.csv")):
             
+            # Only read the CSVs we want to 
             if "combined" in str(csv_path) or "anomalies" in str(csv_path):
                 print("continuing")
                 continue
@@ -96,13 +103,8 @@ def concat_data():
     print(output_path)
 
 
-import os
-from datetime import date, timedelta
 
-import numpy as np
-import pandas as pd
-from sklearn.ensemble import IsolationForest
-from pandas.api.types import is_categorical_dtype
+#Detect anomalies in price
 def get_anomalies():
 
     # ----------------------------
@@ -163,10 +165,10 @@ def get_anomalies():
     #    - Compare latest price against all UNIQUE prices in the last 30 days
     # ----------------------------
     results = []
-    manual_threshold_pct = 30.0  # e.g. 30%+ drop or spike will be caught
+    manual_threshold_pct = 30.0  # e.g. 30%+ drop or spike will be caught no matter what
 
     for (brand, name), sub in df.groupby(["brand", "name"], sort=False):
-        # Need enough history overall
+        # Need enough history overall (3 days)
         if len(sub) < 3:
             continue
 
@@ -187,8 +189,6 @@ def get_anomalies():
         
         # Unique prices in that 30-day window (including the latest day)
         unique_prices = window_sub["price"].dropna().unique()
-        if window_sub.iloc[0]['name'] == "Black Forest Bacon, 12 oz":
-            print(unique_prices)
 
         # If only one unique price and latest equals it, there's nothing "weird"
         if len(unique_prices) == 1 and np.isclose(latest_price, unique_prices[0]):

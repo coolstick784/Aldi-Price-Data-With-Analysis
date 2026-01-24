@@ -1,4 +1,5 @@
 # headless.py
+# This has one function that launches Chromium headless
 from playwright.async_api import async_playwright
 
 async def create_undetected_headless_driver():
