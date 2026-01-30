@@ -1,0 +1,36 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+BREMER,"Original Meatballs, 32 oz",32 oz,2026-01-30,7.49,8.15,-8.1,lower_vs_30d_median,model_30d_unique
+CLANCY'S,"Mistletoe Snack Mix Gift Box, 8 oz",8 oz,2026-01-02,0.55,0.97,-43.3,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,"Pretzel Rings, 16 oz",16 oz.,2026-01-30,0.25,0.4,-37.5,lower_vs_30d_median,median_diff_30pct
+CLANCY'S,"Pretzels Gift Box, 8 oz",8 oz,2026-01-02,0.55,0.97,-43.3,lower_vs_30d_median,median_diff_30pct
+COCA-COLA,"Cola Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-01-30,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Diet Coke Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-01-30,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Sprite Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-01-30,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+GENERAL MILLS,"Honey Nut Cheerios, 15.4 oz",15.4 oz,2026-01-30,4.05,4.45,-8.99,lower_vs_30d_median,model_30d_unique
+KIRKWOOD,"Split Chicken Breasts, per lb",4.35 lb,2026-01-30,8.66,5.37,61.27,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+L'OVEN FRESH,"Multigrain Harvest Bagels, 6 count",20 oz,2026-01-08,0.29,0.49,-40.82,lower_vs_30d_median,median_diff_30pct
+L'OVEN FRESH,"Pumpkin Bagels, 6 count",20 oz,2026-01-08,0.29,0.49,-40.82,lower_vs_30d_median,median_diff_30pct
+NABISCO,"White Fudge Oreos, 8.5 oz",8.5 oz,2026-01-13,2.19,3.29,-33.43,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+NATURE'S NECTAR,"Sparkling Apple Cider, 25.4 fl oz",25.4 fl oz,2026-01-29,1.55,2.35,-34.04,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Basil, Black Olive, and Cheese Tapenade, 6 oz",6 oz,2026-01-30,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Feta Stuffed Queen Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Green Olive Tapenade, 6 oz",6 oz,2026-01-30,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Mixed Seeds, 4.4 oz",4.4 oz,2026-01-14,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Rosemary, 4.4 oz",4.4 oz,2026-01-14,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Italian Breadsticks Sea Salt & Olive Oil, 4.4 oz",4.4 oz,2026-01-14,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Jalapeno Jack Cheese Stuffed Olives, 12 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Jalapeno Jack Cheese Stuffed Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Mini Onion Brioche Toast Crackers, 2.82 oz",2.82 oz,2026-01-30,0.85,1.25,-32.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Original Mini Brioche Toast Cracker, 2.82 oz",2.82 oz,2026-01-30,0.85,1.25,-32.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Roasted Red Pepper Artichoke Tapenade, 6 oz",6 oz,2026-01-30,1.25,1.89,-33.86,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Scalloped Cracker Black Pepper, 6.5 oz",6.5 oz,2026-01-09,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Scalloped Sea Salt Crackers, 6.5 oz",6.5 oz,2026-01-09,1.09,1.65,-33.94,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"White Cheddar Cheese Stuffed Olives, 12 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"White Cheddar Cheese Stuffed Olives, 7 oz",7 oz,2026-01-13,1.65,2.45,-32.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"6"" Self Watering Plant",1 ea,2026-01-21,4.99,7.49,-33.38,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2026-01-30,2.35,2.65,-11.32,lower_vs_30d_median,model_30d_unique
+(no brand),"Gala Apples, 3 lb",3 lb,2026-01-30,1.99,2.29,-13.1,lower_vs_30d_median,model_30d_unique
+(no brand),"Grapefruit, 5 lb",5 lb,2026-01-30,4.29,5.49,-21.86,lower_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",3 lb,2026-01-30,2.69,3.59,-25.07,lower_vs_30d_median,model_30d_unique
+(no brand),"Organic Pink Lady Apples, 3 lb",3 lb,2026-01-30,4.75,4.95,-4.04,lower_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2026-01-30,2.85,3.57,-20.17,lower_vs_30d_median,model_30d_unique
