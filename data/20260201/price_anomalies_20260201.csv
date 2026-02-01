@@ -1,0 +1,12 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+COCA-COLA,"Cola Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-01,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Diet Coke Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-01,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Sprite Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-01,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+GENERAL MILLS,"Honey Nut Cheerios, 15.4 oz",15.4 oz,2026-02-01,4.05,4.45,-8.99,lower_vs_30d_median,model_30d_unique
+(no brand),"6"" Self Watering Plant",1 ea,2026-01-21,4.99,7.49,-33.38,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2026-02-01,2.35,2.65,-11.32,lower_vs_30d_median,model_30d_unique
+(no brand),"Gala Apples, 3 lb",3 lb,2026-02-01,1.99,2.29,-13.1,lower_vs_30d_median,model_30d_unique
+(no brand),"Grapefruit, 5 lb",5 lb,2026-02-01,4.29,5.49,-21.86,lower_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",3 lb,2026-02-01,2.69,3.59,-25.07,lower_vs_30d_median,model_30d_unique
+(no brand),"Organic Pink Lady Apples, 3 lb",3 lb,2026-02-01,4.75,4.95,-4.04,lower_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2026-02-01,2.85,3.57,-20.17,lower_vs_30d_median,model_30d_unique
