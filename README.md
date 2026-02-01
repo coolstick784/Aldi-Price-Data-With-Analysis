@@ -1,4 +1,4 @@
-\# Aldi Price Data
+# Aldi Price Data
 
 
 
