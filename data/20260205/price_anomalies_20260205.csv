@@ -1,0 +1,13 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+COCA-COLA,"Cola Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-05,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Diet Coke Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-05,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+COCA-COLA,"Sprite Mini Cans - 6 Pack, 7.5 fl oz",6 x 7.5 fl oz,2026-02-05,5.35,5.05,5.94,higher_vs_30d_median,model_30d_unique
+GENERAL MILLS,"Honey Nut Cheerios, 15.4 oz",15.4 oz,2026-02-05,4.05,4.45,-8.99,lower_vs_30d_median,model_30d_unique
+REGGANO,"Rotini Pasta, 16 oz",16 oz,2026-02-05,0.85,0.99,-14.14,lower_vs_30d_median,model_30d_unique
+SIMPLY NATURE,"Organic Baby Spinach, 5 oz",5 oz,2026-02-05,2.85,3.09,-7.77,lower_vs_30d_median,model_30d_unique
+(no brand),"6"" Self Watering Plant",1 ea,2026-01-21,4.99,7.49,-33.38,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2026-02-05,2.35,2.65,-11.32,lower_vs_30d_median,model_30d_unique
+(no brand),Hyacinth with Glass Vase - Assorted Color,1 ea,2026-02-04,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Multi-Colored Peppers, 3 count",3 ct,2026-02-05,1.99,2.42,-17.77,lower_vs_30d_median,model_30d_unique
+(no brand),"Organic Pink Lady Apples, 3 lb",3 lb,2026-02-05,4.75,4.95,-4.04,lower_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2026-02-05,2.85,3.57,-20.17,lower_vs_30d_median,model_30d_unique
