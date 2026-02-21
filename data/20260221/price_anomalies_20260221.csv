@@ -1,0 +1,85 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+ALDI,"White Melting Wafers, 10 oz",10 oz,2026-02-18,3.55,3.95,-10.13,lower_vs_30d_median,model_30d_unique
+APPLETON FARMS,"Uncured Turkey Bacon, 10 oz",10 oz,2026-02-21,3.59,3.85,-6.75,lower_vs_30d_median,model_30d_unique
+BAKER'S CORNER,"Semi-Sweet Chocolate Bar, 4 oz",nan,2026-02-20,2.35,3.19,-26.33,lower_vs_30d_median,model_30d_unique
+BAKER'S CORNER,"Unsweetened Chocolate Bar, 4 oz",nan,2026-02-20,2.35,3.19,-26.33,lower_vs_30d_median,model_30d_unique
+BOULDER,6 Roll Towel - 110 Sheets,6 ct,2026-02-21,5.95,6.29,-5.41,lower_vs_30d_median,model_30d_unique
+BREMER,"Shepherd's Pie, 30 oz",30 oz,2026-02-21,5.65,7.15,-20.98,lower_vs_30d_median,model_30d_unique
+BURMAN'S,Dill Pickle Mustard,12 oz,2026-02-21,1.09,1.55,-29.68,lower_vs_30d_median,model_30d_unique
+BURMAN'S,Honey Dijon Mustard,12 oz,2026-02-18,1.09,1.55,-29.68,lower_vs_30d_median,model_30d_unique
+CABOT,"Seriously Sharp White Cheddar, 8 oz",8 oz,2026-02-21,3.09,3.95,-21.77,lower_vs_30d_median,model_30d_unique
+CHEF'S CUPBOARD,Chicken Pot Pie,18.8 oz,2026-02-21,1.89,1.99,-5.03,lower_vs_30d_median,model_30d_unique
+CHEF'S CUPBOARD,"Classic Hawaiian Stuffing, 6 oz",6 oz,2026-02-21,1.09,1.45,-24.83,lower_vs_30d_median,model_30d_unique
+CHEF'S CUPBOARD,"Sage and Onion Hawaiian Stuffing, 6 oz",6 oz,2026-02-21,1.09,1.45,-24.83,lower_vs_30d_median,model_30d_unique
+CHEF'S CUPBOARD,Steak and Potato soup,18.8 oz,2026-02-21,1.89,1.99,-5.03,lower_vs_30d_median,model_30d_unique
+CHOCEUR,"Love Around The World Assorted Chocolates, 3.84 oz",3.84 oz,2026-02-11,3.79,4.29,-11.66,lower_vs_30d_median,model_30d_unique
+CHOCEUR,"Love Around The World Dubai Chocolates, 3.6 oz",3.6 oz,2026-02-11,3.79,4.29,-11.66,lower_vs_30d_median,model_30d_unique
+DAKOTA'S PRIDE,"Sixteen Bean Soup Mix, 20 oz",20 oz,2026-02-21,1.89,2.19,-13.7,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Apple Pie Pure and Simple Fruit and Nut Bars, 5 count",5 ct,2026-02-21,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Chocolate Peanut Butter Protein Meal Bars, 6 count",6 ct,2026-02-21,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Double Chocolate Protein Meal Bars, 6 count",6 ct,2026-02-21,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Peanut Butter Cookie Pure and Simple Fruit and Nut Bars, 5 count",5 ct,2026-02-21,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Strawberry Protein Meal Bars, 6 Bars",6 ct,2026-02-21,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"3 Chile Gouda Cheese, 6 oz",6 oz,2026-02-13,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"But First Coffee Lavender and Espresso Cheddar Cheese, 4 oz",4 oz,2026-02-21,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"French Onion Havarti Cheese, 6 oz",6 oz,2026-02-13,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Garlic & Herb Gourmet Spreadable Cheese, 6.5 oz",6.5 oz,2026-02-21,3.19,3.65,-12.6,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Honey I'd Rather Bee at the Sea Sea Salt Honey Cheddar Cheese, 4 oz",4 oz,2026-02-21,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Horseradish Cheddar Cheese Spread, 6.5 oz",6.5 oz,2026-02-21,3.19,3.65,-12.6,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Original Butterkase Cheese, 6 oz",6 oz,2026-02-13,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Peppercorn Parmesan Cheese Spread, 6.5 oz",6.5 oz,2026-02-21,3.19,3.65,-12.6,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Sharp Cheddar Cheese Spread, 6.5 oz",6.5 oz,2026-02-21,3.19,3.65,-12.6,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Some Like it Hatch Hatch Pepper Cheddar Cheese, 4 oz",4 oz,2026-02-21,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"You're Cajun Me Crazy Cajun Spice Cheddar Cheese, 4 oz",4 oz,2026-02-21,2.75,3.65,-24.66,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Port Wine Deli Style Cheese Ball, 6 oz",6 oz,2026-02-21,1.89,2.55,-25.88,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Port Wine Spreadable Cheese Cup, 11.7 oz",11.7 oz,2026-02-21,2.99,4.09,-26.89,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Port Wine Spreadable Cheese with Almond, 6 oz",10 oz,2026-02-21,1.89,2.55,-25.88,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Sharp Cheddar Deli Style Cheese Ball, 6 oz",6 oz,2026-02-21,1.89,2.55,-25.88,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Sharp Cheddar Spreadable Cheese Cup, 11.7 oz",11.7 oz,2026-02-21,2.99,4.09,-26.89,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Sharp Cheddar Spreadable Cheese with Almonds, 6 oz",10 oz,2026-02-21,1.89,2.55,-25.88,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Swiss Almond Spreadable Cheese Cup, 12.9 oz",14 oz,2026-02-21,2.99,4.09,-26.89,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS/EMPORIUM SELECTION,"Party Cheese Tray, 16 oz",16 oz,2026-02-21,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS/EMPORIUM SELECTION,"Specialty Party Cheese Tray, 13.7 oz",13.7 oz,2026-02-21,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+HAPPY HARVEST,"Sliced Pickled Beets, 16 oz",16 oz,2026-02-21,1.95,1.75,11.43,higher_vs_30d_median,model_30d_unique
+HAPPY HARVEST,"Whole Pickled Beets, 16 oz",16 oz,2026-02-21,1.95,1.75,11.43,higher_vs_30d_median,model_30d_unique
+MOSER ROTH,"Valentine's Day Truffle Hearts Chocolates, 2.75 oz",nan,2026-02-11,3.79,4.29,-11.66,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Red Pepper Goat Cheese Dip, 7 oz",7 oz,2026-02-21,2.45,2.75,-10.91,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Roasted Red Pepper Goat Cheese Dip, 7 oz",7 oz,2026-02-21,2.45,2.75,-10.91,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Truffle Dip, 7 oz",7 oz,2026-02-21,2.45,2.75,-10.91,lower_vs_30d_median,model_30d_unique
+PARK STREET DELI,"Truffle Dip, 8 oz",7 oz,2026-02-21,2.45,2.75,-10.91,lower_vs_30d_median,model_30d_unique
+PRIANO,"Crab Ravioli, 9 oz",9 oz,2026-02-21,3.59,4.95,-27.47,lower_vs_30d_median,model_30d_unique
+PRIANO,"Lobster Ravioli, 9 oz",9 oz,2026-02-21,3.59,4.95,-27.47,lower_vs_30d_median,model_30d_unique
+REGGANO,"Rotini Pasta, 16 oz",16 oz,2026-02-21,0.85,0.99,-14.14,lower_vs_30d_median,model_30d_unique
+SAVORITZ,"Soup & Oyster Crackers, 10 oz",10 oz,2026-02-21,1.25,1.45,-13.79,lower_vs_30d_median,model_30d_unique
+SIMMS,"Thick Cut Pepperoni, 16 oz",16 oz,2026-02-21,6.25,7.39,-15.43,lower_vs_30d_median,model_30d_unique
+SIMPLY NATURE,"Organic Baby Spinach, 5 oz",5 oz,2026-02-21,2.85,3.09,-7.77,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Applewood Smoked Cheddar & Bacon Deluxe Cheesy Potatoes,6.56 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Applewood Smoked Cheddar & Bacon Potatoes, 6.6 oz",6.56 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Caramel Belgium Desserts - 2 pack, 2.1 oz",2 x 2.1 oz,2026-02-21,2.99,4.09,-26.89,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Chocolate Belgium Desserts - 2 pack, 2.1 oz",2 x 2.1 oz,2026-02-21,2.99,4.09,-26.89,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Creamy Swiss Parmesan Potatoes, 6.8 oz",6.77 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Espresso Martini Cheddar Cheese, 6 oz",6 oz,2026-02-21,3.39,4.75,-28.63,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Grated Parmigiano Reggiano Cheese, 5 oz",5 oz,2026-02-21,4.85,5.49,-11.66,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Herb, Tomato & Cheddar Potatoes, 6.7 oz",6.7 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Imperial Stout Craft Beer Cheddar Cheese, 6 oz",6 oz,2026-02-21,3.39,4.75,-28.63,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Mediterranean Herb Cheddar Potatoes,6.7 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Parmigiano Reggiano Wedge Cheese, 5.3 oz",5.3 oz,2026-02-21,4.85,5.49,-11.66,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Premium Apple Mascarpone Strudel, 21.2 oz",21.2 oz,2026-02-21,3.95,4.39,-10.02,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Premium Cherry Mascarpone Strudel, 21.2 oz",21.2 oz,2026-02-21,3.95,4.39,-10.02,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Purple Moon Cheddar Cheese, 6 oz",6 oz,2026-02-21,3.39,4.75,-28.63,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Shaved Parmigiano Reggiano Cheese, 5 oz",5 oz,2026-02-21,4.85,5.49,-11.66,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Swiss Parmesan Potatoes,6.77 oz,2026-02-21,2.09,2.45,-14.69,lower_vs_30d_median,model_30d_unique
+TUSCAN GARDEN,"Bacon Ranch Dressing, 20 fl oz",20 fl oz,2026-02-21,2.29,3.09,-25.89,lower_vs_30d_median,model_30d_unique
+TUSCAN GARDEN,"Garlic Ranch Dressing, 20 fl oz",20 fl oz,2026-02-21,2.29,3.09,-25.89,lower_vs_30d_median,model_30d_unique
+TUSCAN GARDEN,"Parmesan Ranch Dressing, 20 fl oz",20 fl oz,2026-02-21,2.29,3.09,-25.89,lower_vs_30d_median,model_30d_unique
+(no brand),"10"" Assorted Foliage",1 ea,2026-02-11,7.49,11.24,-33.36,lower_vs_30d_median,median_diff_30pct
+(no brand),"10"" Foliage Plant - Assorted Varieties",1 ea,2026-02-11,7.49,11.24,-33.36,lower_vs_30d_median,median_diff_30pct
+(no brand),"5"" Money Tree",1 ea,2026-02-11,4.49,6.74,-33.38,lower_vs_30d_median,median_diff_30pct
+(no brand),"5"" Valentine's Day Orchid - Assorted Color",1 ea,2026-02-18,3.19,8.09,-60.57,lower_vs_30d_median,median_diff_30pct
+(no brand),"Autumncrisp Grapes, 2 lb Bag",2 lb,2026-02-21,4.99,5.99,-16.69,lower_vs_30d_median,model_30d_unique
+(no brand),"Cherub Grape Tomatoes, 10 oz",10 oz,2026-02-21,2.19,2.45,-10.61,lower_vs_30d_median,model_30d_unique
+(no brand),Deluxe Valentine's Day Bouquet - Assorted Color,1 ea,2026-02-18,1.49,3.74,-60.16,lower_vs_30d_median,median_diff_30pct
+(no brand),Hyacinth with Glass Vase - Assorted Color,1 ea,2026-02-04,2.49,3.74,-33.42,lower_vs_30d_median,median_diff_30pct
+(no brand),"Organic Raspberries, 6 oz",6 oz,2026-02-21,3.95,4.29,-7.93,lower_vs_30d_median,model_30d_unique
+(no brand),Valentine's Day 10 Stem Tulip Bouquet - Assorted Color,1 ea,2026-02-18,1.49,3.74,-60.16,lower_vs_30d_median,median_diff_30pct
+(no brand),Valentine's Day 12 Stem Roses - Assorted Colors,1 ea,2026-02-18,2.49,6.24,-60.1,lower_vs_30d_median,median_diff_30pct
