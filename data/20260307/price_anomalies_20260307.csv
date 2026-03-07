@@ -1,0 +1,61 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+APPLETON FARMS,"Uncured Turkey Bacon, 10 oz",10 oz,2026-03-07,3.59,3.85,-6.75,lower_vs_30d_median,model_30d_unique
+BAKE HOUSE CREATIONS,"Refrigerated Ready to Bake Pie Crusts, 2 count",14.1 oz,2026-03-07,2.15,2.35,-8.51,lower_vs_30d_median,model_30d_unique
+BARISSIMO,"Pumpkin Spice Barista Cold Foam, 13 oz",13 oz,2026-03-07,2.15,3.09,-30.42,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+BARISSIMO,"White Chocolate Barista Cold Foam, 13 oz",13 oz,2026-03-07,2.15,3.09,-30.42,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+BOULDER,Ultra Paper Towel - 120 Sheets,6 ct,2026-03-07,9.35,9.35,0.0,no_change,model_30d_unique
+BREMER,"Shepherd's Pie, 30 oz",30 oz,2026-03-07,3.59,5.65,-36.46,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,Chicken Pot Pie,18.8 oz,2026-02-26,1.35,1.89,-28.57,lower_vs_30d_median,model_30d_unique
+CHEF'S CUPBOARD,"Classic Hawaiian Stuffing, 6 oz",6 oz,2026-03-07,0.75,1.09,-31.19,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Sage and Onion Hawaiian Stuffing, 6 oz",6 oz,2026-03-07,0.75,1.09,-31.19,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,Steak and Potato soup,18.8 oz,2026-02-26,1.35,1.89,-28.57,lower_vs_30d_median,model_30d_unique
+DAKOTA'S PRIDE,"Pinto Beans, 30 oz",30 oz,2026-03-07,1.75,1.25,40.0,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+ELEVATION,"Apple Pie Pure and Simple Fruit and Nut Bars, 5 count",5 ct,2026-03-07,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Chocolate Peanut Butter Protein Meal Bars, 6 count",6 ct,2026-03-07,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Double Chocolate Protein Meal Bars, 6 count",6 ct,2026-03-07,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Peanut Butter Cookie Pure and Simple Fruit and Nut Bars, 5 count",5 ct,2026-03-07,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+ELEVATION,"Strawberry Protein Meal Bars, 6 Bars",6 ct,2026-03-07,5.05,5.29,-4.54,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS,"Port Wine Deli Style Cheese Ball, 6 oz",6 oz,2026-03-07,1.29,1.89,-31.75,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Port Wine Spreadable Cheese Cup, 11.7 oz",11.7 oz,2026-03-07,2.05,2.99,-31.44,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Port Wine Spreadable Cheese with Almond, 6 oz",10 oz,2026-03-07,1.29,1.89,-31.75,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Sharp Cheddar Deli Style Cheese Ball, 6 oz",6 oz,2026-03-07,1.29,1.89,-31.75,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Sharp Cheddar Spreadable Cheese Cup, 11.7 oz",11.7 oz,2026-03-07,2.05,2.99,-31.44,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Sharp Cheddar Spreadable Cheese with Almonds, 6 oz",10 oz,2026-03-07,1.29,1.89,-31.75,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS,"Swiss Almond Spreadable Cheese Cup, 12.9 oz",12.9 oz,2026-03-07,2.05,2.99,-31.44,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+HAPPY FARMS/EMPORIUM SELECTION,"Party Cheese Tray, 16 oz",16 oz,2026-03-05,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+HAPPY FARMS/EMPORIUM SELECTION,"Specialty Party Cheese Tray, 13.7 oz",13.7 oz,2026-03-05,4.39,4.75,-7.58,lower_vs_30d_median,model_30d_unique
+HAPPY HARVEST,"Sliced Pickled Beets, 16 oz",16 oz,2026-03-07,1.95,1.75,11.43,higher_vs_30d_median,model_30d_unique
+HAPPY HARVEST,"Whole Pickled Beets, 16 oz",16 oz,2026-03-07,1.95,1.75,11.43,higher_vs_30d_median,model_30d_unique
+KIRKWOOD,"Chicken Drumsticks, per lb",2.75 lb,2026-03-07,4.92,5.55,-11.43,lower_vs_30d_median,model_30d_unique
+SAVORITZ,"Soup & Oyster Crackers, 10 oz",10 oz,2026-03-07,0.95,1.25,-24.0,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Applewood Smoked Cheddar & Bacon Deluxe Cheesy Potatoes,6.56 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Applewood Smoked Cheddar & Bacon Potatoes, 6.6 oz",6.56 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Creamy Swiss Parmesan Potatoes, 6.8 oz",6.77 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Espresso Martini Cheddar Cheese, 6 oz",6 oz,2026-03-07,2.39,3.39,-29.5,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Hearty Vegetable Soup, 24 oz",24 oz,2026-03-07,3.09,3.85,-19.74,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Herb, Tomato & Cheddar Potatoes, 6.7 oz",6.7 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Imperial Stout Craft Beer Cheddar Cheese, 6 oz",6 oz,2026-03-07,2.39,3.39,-29.5,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Mediterranean Herb Cheddar Potatoes,6.7 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Perfect Pairing Red and Green Grapes, 3 lb",3 lb,2026-03-07,6.99,7.99,-12.52,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Premium Apple Mascarpone Strudel, 21.2 oz",21.2 oz,2026-03-07,2.65,3.95,-32.91,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Premium Cherry Mascarpone Strudel, 21.2 oz",21.2 oz,2026-03-07,2.65,3.95,-32.91,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Purple Moon Cheddar Cheese, 6 oz",6 oz,2026-03-07,2.39,3.39,-29.5,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Southwest Black Bean Soup, 24 oz",24 oz,2026-03-07,3.09,3.85,-19.74,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,Swiss Parmesan Potatoes,6.77 oz,2026-03-07,1.49,2.09,-28.71,lower_vs_30d_median,model_30d_unique
+SPECIALLY SELECTED,"Tomato Parmesan Bisque Soup, 24 oz",24 oz,2026-03-07,3.09,3.85,-19.74,lower_vs_30d_median,model_30d_unique
+TUSCAN GARDEN,"Bacon Ranch Dressing, 20 fl oz",20 fl oz,2026-03-07,1.55,2.29,-32.31,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+TUSCAN GARDEN,"Garlic Ranch Dressing, 20 fl oz",20 fl oz,2026-03-07,1.55,2.29,-32.31,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+TUSCAN GARDEN,"Parmesan Ranch Dressing, 20 fl oz",20 fl oz,2026-03-07,1.55,2.29,-32.31,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"10"" Assorted Foliage",1 ea,2026-02-11,7.49,11.24,-33.36,lower_vs_30d_median,median_diff_30pct
+(no brand),"10"" Foliage Plant - Assorted Varieties",1 ea,2026-02-11,7.49,11.24,-33.36,lower_vs_30d_median,median_diff_30pct
+(no brand),"5"" Money Tree",1 ea,2026-02-11,4.49,6.74,-33.38,lower_vs_30d_median,median_diff_30pct
+(no brand),"5"" Valentine's Day Orchid - Assorted Color",1 ea,2026-02-18,3.19,8.09,-60.57,lower_vs_30d_median,median_diff_30pct
+(no brand),"Bartlett Pears, 3 lb",3 lb,2026-03-07,3.95,3.75,5.33,higher_vs_30d_median,model_30d_unique
+(no brand),"Black Angus Beef Choice Boneless Cubed Steak, per lb",1.4 lb,2026-03-07,9.51,7.49,26.97,higher_vs_30d_median,model_30d_unique
+(no brand),Deluxe Valentine's Day Bouquet - Assorted Color,1 ea,2026-02-18,1.49,3.74,-60.16,lower_vs_30d_median,median_diff_30pct
+(no brand),"Fresh Navel Oranges, 4 lb",4 lb,2026-03-07,2.49,3.59,-30.64,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"Gala Apples, 3 lb",3 lb,2026-03-07,2.45,2.29,6.99,higher_vs_30d_median,model_30d_unique
+(no brand),"Mini Sweet Peppers, 1 lb",1 lb,2026-03-07,3.55,2.89,22.84,higher_vs_30d_median,model_30d_unique
+(no brand),"Mini Sweet Peppers, Package",1 lb,2026-03-04,3.55,2.89,22.84,higher_vs_30d_median,model_30d_unique
+(no brand),Valentine's Day 10 Stem Tulip Bouquet - Assorted Color,1 ea,2026-02-18,1.49,3.74,-60.16,lower_vs_30d_median,median_diff_30pct
+(no brand),Valentine's Day 12 Stem Roses - Assorted Colors,1 ea,2026-02-18,2.49,6.24,-60.1,lower_vs_30d_median,median_diff_30pct
