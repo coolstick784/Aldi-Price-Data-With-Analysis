@@ -1,0 +1,26 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+BAKE HOUSE CREATIONS,"Refrigerated Ready to Bake Pie Crusts, 2 count",14.1 oz,2026-03-20,2.15,2.35,-8.51,lower_vs_30d_median,model_30d_unique
+BARISSIMO,"Pumpkin Spice Barista Cold Foam, 13 oz",13 oz,2026-03-20,1.19,2.15,-44.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+BARISSIMO,"White Chocolate Barista Cold Foam, 13 oz",13 oz,2026-03-20,1.19,2.15,-44.65,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+BOULDER,Ultra Paper Towel - 120 Sheets,6 ct,2026-03-20,9.35,9.35,0.0,no_change,model_30d_unique
+CHEF'S CUPBOARD,"3 Bean Chili Soup Mix, 8.8 oz",8.8 oz,2026-03-20,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Cheddar Broccoli Soup Mix, 11.2 oz",10.6 oz,2026-03-20,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Chicken Noodle Soup Mix, 8.4 oz",8.4 oz,2026-03-20,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Rich & Creamy Potato Soup Mix, 11 oz",10.5 oz,2026-03-20,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+DAKOTA'S PRIDE,"Pinto Beans, 30 oz",30 oz,2026-03-17,1.75,1.25,40.0,higher_vs_30d_median,model_30d_unique|median_diff_30pct
+EMPORIUM SELECTION,"Everything Goat Milk Cheese Log, 6 oz",6 oz,2026-03-20,4.25,4.49,-5.35,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Goat Brie, 7 oz",7 oz,2026-03-20,4.25,4.49,-5.35,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Goat Cheddar, 6.35 oz",6.35 oz,2026-03-20,4.25,4.49,-5.35,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Truffle Goat Log, 4 oz",4 oz,2026-03-20,4.25,4.49,-5.35,lower_vs_30d_median,model_30d_unique
+KIRKWOOD,"Buffalo Crispy Chicken Strips, 25 oz",25 oz,2026-03-20,6.95,6.49,7.09,higher_vs_30d_median,model_30d_unique
+KIRKWOOD,"Chicken Drumsticks, per lb",2.75 lb,2026-03-20,4.92,5.55,-11.43,lower_vs_30d_median,model_30d_unique
+PARKVIEW,"Cocktail Smokies Smoked Sausage, 14 oz",14 oz,2026-03-20,3.15,2.85,10.53,higher_vs_30d_median,model_30d_unique
+REESE'S,"Peanut Butter Chips, 10 oz",10 oz,2026-03-20,1.39,2.45,-43.27,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SAVORITZ,"Soup & Oyster Crackers, 10 oz",10 oz,2026-03-20,0.65,0.95,-31.58,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Pavé, 5 oz",5 oz,2026-03-20,2.19,3.65,-40.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+SPECIALLY SELECTED,"Triple Creme Brie, 5 oz",5 oz,2026-03-20,2.19,3.65,-40.0,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"5"" Foliage Plant - Assorted Varieties",1 ea,2026-03-12,3.49,5.24,-33.4,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2026-03-20,1.89,2.19,-13.7,lower_vs_30d_median,model_30d_unique
+(no brand),"Iceberg Lettuce, each",1 each,2026-03-20,2.19,2.39,-8.37,lower_vs_30d_median,model_30d_unique
+(no brand),"Pink Lady Apples, 3 lb",3 lb,2026-03-20,3.55,3.19,11.29,higher_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2026-03-20,1.29,2.29,-43.67,lower_vs_30d_median,model_30d_unique|median_diff_30pct
