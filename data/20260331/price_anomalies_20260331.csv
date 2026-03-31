@@ -1,0 +1,15 @@
+brand,name,weight,latest_date,latest_price,median_price_30d,pct_diff_vs_30d_median,direction,reason
+CHEF'S CUPBOARD,"3 Bean Chili Soup Mix, 8.8 oz",8.8 oz,2026-03-25,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Cheddar Broccoli Soup Mix, 11.2 oz",10.6 oz,2026-03-25,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Chicken Noodle Soup Mix, 8.4 oz",8.4 oz,2026-03-25,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+CHEF'S CUPBOARD,"Rich & Creamy Potato Soup Mix, 11 oz",10.5 oz,2026-03-25,1.35,2.35,-42.55,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+EMPORIUM SELECTION,"Camembert Soft Cheese, 7 oz",7 oz,2026-03-25,3.99,4.39,-9.11,lower_vs_30d_median,model_30d_unique
+EMPORIUM SELECTION,"Double Crème Brie Cheese, 7 oz",7 oz,2026-03-25,3.99,4.39,-9.11,lower_vs_30d_median,model_30d_unique
+(no brand),"5"" Foliage Plant - Assorted Varieties",1 ea,2026-03-12,3.49,5.24,-33.4,lower_vs_30d_median,median_diff_30pct
+(no brand),"Blackberries, 6 oz",6 oz,2026-03-25,1.89,2.19,-13.7,lower_vs_30d_median,model_30d_unique
+(no brand),"Iceberg Lettuce, each",1 each,2026-03-25,2.19,2.39,-8.37,lower_vs_30d_median,model_30d_unique
+(no brand),"Mandarin Oranges, 3 lb",3 lb,2026-03-25,2.89,3.19,-9.4,lower_vs_30d_median,model_30d_unique
+(no brand),"Pink Lady Apples, 3 lb",3 lb,2026-03-25,3.55,3.19,11.29,higher_vs_30d_median,model_30d_unique
+(no brand),"Strawberries, 1 lb",1 lb,2026-03-25,1.29,2.19,-41.1,lower_vs_30d_median,model_30d_unique|median_diff_30pct
+(no brand),"Yellow Onions, 3 lb",3 lb,2026-03-25,1.99,2.09,-4.78,lower_vs_30d_median,model_30d_unique
+(no brand),"Yellow Potatoes, 5 lb",5 lb,2026-03-25,3.79,4.19,-9.55,lower_vs_30d_median,model_30d_unique
