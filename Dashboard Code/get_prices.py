@@ -5,17 +5,20 @@ import csv
 from pathlib import Path
 from datetime import datetime, date
 
-from dateutil.relativedelta import relativedelta
 import pandas as pd
 
 
-def get_prices(TARGET_BRAND, TARGET_NAME):
+def get_prices(TARGET_BRAND, TARGET_NAME, end_date=None):
     # set the start and end dates 
     BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
-    START = max(date(2025, 10, 9), date.today() - relativedelta(months=1))
+    START = date(2025, 10, 9)
 
-
-    END = date.today()  # inclusive
+    if end_date is None:
+        END = date.today()
+    elif isinstance(end_date, str):
+        END = datetime.strptime(end_date, "%Y%m%d").date()
+    else:
+        END = end_date
 
 
 

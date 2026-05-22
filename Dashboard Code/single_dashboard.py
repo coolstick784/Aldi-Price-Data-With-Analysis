@@ -50,9 +50,9 @@ st.markdown("""
 
 
 # This function makes a dashbaord given a brand and name
-def make_dashboard(brand,name):
+def make_dashboard(brand, name, end_date=None):
     brand = brand.replace("(no brand)", '')
-    prices = get_prices(brand, name)
+    prices = get_prices(brand, name, end_date=end_date)
     #st.write(prices)
     # We don't have data before Oct. 9, 2025
     START_FALLBACK = date(2025, 10, 9)
@@ -93,14 +93,14 @@ def make_dashboard(brand,name):
             return (cur_date - breach.iloc[-1]["date"]).days
 
         msg = ""
-        if cur_price > hist.iloc[-2]['price']:
+        if len(hist) >= 2 and cur_price > hist.iloc[-2]['price']:
             days = last_strict_breach(True)
             if days:
                 day_text = "1 day" if days == 1 else f"{days} days"
                 msg = f"It’s the highest price over the last {day_text}."
             else:
                 msg = f"It’s the highest price since at least {START_FALLBACK.strftime('%B %d, %Y')}."
-        elif cur_price < hist.iloc[-2]['price']:
+        elif len(hist) >= 2 and cur_price < hist.iloc[-2]['price']:
             days = last_strict_breach(False)
             if days:
                 day_text = "1 day" if days == 1 else f"{days} days"
@@ -115,7 +115,7 @@ def make_dashboard(brand,name):
             {brand} {name} (Approximate Weight: {cur_weight})
         </h1>
         <h2 style="margin-bottom:0;color:#000000;">
-            Current price (as of {cur_date}): 
+            Price as of {cur_date}:
             <span style="font-weight:900;color:#000000;">
                 ${cur_price:,.2f}
             </span>

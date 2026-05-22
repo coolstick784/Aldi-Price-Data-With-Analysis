@@ -3,7 +3,7 @@
 # This creates the overall Streamlit site
 import os
 import glob
-from datetime import date, timedelta
+from datetime import datetime
 import requests
 import re
 from io import BytesIO
@@ -22,13 +22,21 @@ icon = Image.open(BytesIO(response.content))
 
 #Set the page config
 st.set_page_config(
-    page_title="Aldi Price Browser",
+    page_title="Historical Aldi Price Viewer",
     page_icon=icon,
     layout="wide",
 )
 
 # Get today's folder for today's data (or yesterday's if today's hasn't uploaded yet)
+def parse_date_folder(folder_name):
+    try:
+        return datetime.strptime(folder_name, "%Y%m%d").date()
+    except ValueError:
+        return None
+
+
 def get_today_folder():
+    return get_available_snapshots()[0]["folder"]
     today = date.today()
     today_str = today.strftime("%Y%m%d")
     today_folder = os.path.join(BASE_DIR, today_str)
@@ -54,10 +62,68 @@ def find_csv_with_prefix(folder, prefix):
     return matches[0] if matches else None
 
 
-# Get today's folder, and then the combined + anomalies data. Stop the script if either is not found
-folder_today = get_today_folder()
+def csv_has_data(path):
+    with open(path, "rb") as f:
+        for line_count, _ in enumerate(f, start=1):
+            if line_count > 1:
+                return True
+    return False
 
-combined_path = find_csv_with_prefix(folder_today, "combined")
+
+def get_latest_data_date(path):
+    try:
+        dates = pd.read_csv(path, usecols=["date"], parse_dates=["date"])["date"].dropna()
+    except Exception:
+        return None
+    if dates.empty:
+        return None
+    return dates.max().date()
+
+
+def get_available_snapshots():
+    snapshots_by_date = {}
+    for folder in sorted(BASE_DIR.iterdir(), key=lambda p: p.name, reverse=True):
+        if not folder.is_dir():
+            continue
+        if parse_date_folder(folder.name) is None:
+            continue
+        combined_path = find_csv_with_prefix(str(folder), "combined")
+        if combined_path and csv_has_data(combined_path):
+            data_date = get_latest_data_date(combined_path)
+            if data_date is None or data_date in snapshots_by_date:
+                continue
+            snapshots_by_date[data_date] = {
+                "date": data_date,
+                "folder": str(folder),
+                "combined_path": combined_path,
+            }
+    return [
+        snapshots_by_date[data_date]
+        for data_date in sorted(snapshots_by_date, reverse=True)
+    ]
+
+
+snapshots = get_available_snapshots()
+
+if not snapshots:
+    st.error(f"No historical combined CSVs with data found in {BASE_DIR}.")
+    st.stop()
+
+snapshot_options = {
+    snapshot["date"].strftime("%B %d, %Y"): snapshot
+    for snapshot in snapshots
+}
+selected_label = st.sidebar.selectbox(
+    "As of date",
+    options=list(snapshot_options.keys()),
+    index=0,
+)
+selected_snapshot = snapshot_options[selected_label]
+folder_today = selected_snapshot["folder"]
+snapshot_date = selected_snapshot["date"]
+st.header(f"Historical data as of: {snapshot_date.strftime('%B %d, %Y')}")
+
+combined_path = selected_snapshot["combined_path"]
 anomalies_path = find_csv_with_prefix(folder_today, "price_anomalies")
 
 if combined_path is None:
@@ -145,7 +211,7 @@ anoms["latest_price"] = (
 
 
 # Add a title, with a line and then the actual content
-st.title("Aldi Price Browser")
+st.title("Historical Aldi Price Viewer")
 
 
 
@@ -233,7 +299,7 @@ if not results.empty:
         chosen_row = show_df[show_df["display"] == selected_display].iloc[0]
         chosen_brand = chosen_row["brand"]
         chosen_name = chosen_row["name"]
-        make_dashboard(chosen_brand, chosen_name)
+        make_dashboard(chosen_brand, chosen_name, end_date=snapshot_date)
 
 
 
@@ -417,6 +483,6 @@ if "selected_brand" in st.session_state and "selected_name" in st.session_state:
     chosen_brand = st.session_state["selected_brand"]
     chosen_name = st.session_state["selected_name"]
 
-    make_dashboard(chosen_brand, chosen_name)
+    make_dashboard(chosen_brand, chosen_name, end_date=snapshot_date)
 else:
     st.info("Click a product card above to open its dashboard.")
