@@ -12,9 +12,9 @@ Price analysis website: https://aldi-price-analysis.streamlit.app/
 - Latest archive folder currently checked in: 2026-05-22
 - Latest non-empty combined snapshot currently checked in: 2026-04-24
 - Latest actual product price date currently available: 2026-03-24
-- Historical viewer sliding-window snapshot: 2026-03-24
+- Historical viewer snapshots: 2025-11-13 through 2026-03-24
 
-Some recent scrape folders are present but contain header-only CSVs because the scraper stopped returning product rows. The Streamlit app now behaves as a historical price viewer: it uses the checked-in 30-day combined sliding-window CSV for March 24, 2026 instead of scanning every historical category CSV on each page load.
+Some recent scrape folders are present but contain header-only CSVs because the scraper stopped returning product rows. The Streamlit app now behaves as a historical price viewer: it lets users choose an available "as of" date, loads that date's 30-day combined sliding-window CSV for the product catalog, and reconstructs full product chart history through the selected date from cached combined windows.
 
 ## App
 
@@ -24,7 +24,7 @@ Run the historical viewer with:
 streamlit run "Dashboard Code/all_dashboard.py"
 ```
 
-Use the sidebar's "As of date" selector to browse the pinned March 24, 2026 snapshot. Search for a product to open its price chart.
+Use the sidebar's "As of date" selector to browse a historical snapshot. Search for a product to open its full price history chart through that selected date.
 
 Feel free to use the data to your liking.
 

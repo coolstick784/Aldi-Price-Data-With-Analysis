@@ -4,7 +4,7 @@
 import glob
 import re
 from single_dashboard import make_dashboard
-from get_prices import LAST_PRICE_DATE, get_window_path, load_price_window
+from get_prices import get_available_snapshots, load_price_window
 import pandas as pd
 import streamlit as st
 from pathlib import Path
@@ -24,12 +24,11 @@ def find_csv_with_prefix(folder, prefix):
     return matches[0] if matches else None
 
 
-window_path = get_window_path(LAST_PRICE_DATE)
-snapshots = [{
-    "date": LAST_PRICE_DATE,
-    "folder": str(window_path.parent),
-    "combined_path": str(window_path),
-}]
+snapshots = get_available_snapshots()
+
+if not snapshots:
+    st.error("No historical combined CSV snapshots found.")
+    st.stop()
 
 snapshot_options = {
     snapshot["date"].strftime("%B %d, %Y"): snapshot
