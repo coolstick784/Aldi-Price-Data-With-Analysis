@@ -13,7 +13,7 @@ from pathlib import Path
 #Set the page config
 st.set_page_config(
     page_title="Historical Aldi Price Viewer",
-    page_icon="A",
+    page_icon=':shallow_pan_of_food:',
     layout="wide",
 )
 
