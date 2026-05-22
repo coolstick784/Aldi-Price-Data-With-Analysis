@@ -11,7 +11,7 @@ Price analysis website: https://aldi-price-analysis.streamlit.app/
 
 \- Source: Grocery data from aldi.us
 
-\- Timeframe: 2025-10-09 onward
+\- Timeframe: 2025-10-09 to 2026-04-24
 
 
 
