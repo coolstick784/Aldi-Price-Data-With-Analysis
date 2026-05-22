@@ -110,7 +110,7 @@ def get_anomalies():
     # ----------------------------
     # 1) Paths (auto-adjust to today's date)
     # ----------------------------
-    BASE_DIR = r"C:\Users\cools\grocery\aldi"
+    BASE_DIR = r"C:\Users\cools\grocery\aldi\data"
 
 
     today = date.today()
@@ -256,12 +256,23 @@ def get_anomalies():
     # ----------------------------
     # 4) Output anomalies only
     # ----------------------------
-    out = pd.DataFrame(results)
+    output_cols = [
+        "brand",
+        "name",
+        "weight",
+        "latest_date",
+        "latest_price",
+        "median_price_30d",
+        "pct_diff_vs_30d_median",
+        "direction",
+        "reason",
+    ]
+    out = pd.DataFrame(results, columns=output_cols)
     out_path = os.path.join(folder, f"price_anomalies_{today_str}.csv")
+    out.to_csv(out_path, index=False)
 
     if not out.empty:
-        out.to_csv(out_path, index=False)
         print(f"{len(out)} anomalies saved to {out_path}")
         print(out)
     else:
-        print("No anomalies detected for latest prices (vs unique prices in last 30 days).")
+        print(f"No anomalies detected; empty anomalies CSV saved to {out_path}")

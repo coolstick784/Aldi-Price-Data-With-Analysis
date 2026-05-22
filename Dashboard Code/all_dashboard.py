@@ -64,10 +64,6 @@ if combined_path is None:
     st.error(f"No combined CSV found in {folder_today} (expected file starting with 'combined').")
     st.stop()
 
-if anomalies_path is None:
-    st.error(f"No price_anomalies CSV found in {folder_today} (expected file starting with 'price_anomalies').")
-    st.stop()
-
 # Read combined data
 combined = pd.read_csv(combined_path)
 
@@ -109,9 +105,6 @@ def normalize_text_to_tokens(text: str):
 products["tokens"] = products["display"].apply(normalize_text_to_tokens)
 
 
-# Read anomalies data
-anoms = pd.read_csv(anomalies_path)
-
 # Ensure expected columns exist
 expected_cols = [
     "brand",
@@ -124,6 +117,13 @@ expected_cols = [
     "direction",
     "reason",
 ]
+
+# Read anomalies data. Missing file means there were no detected movers that day.
+if anomalies_path is None:
+    anoms = pd.DataFrame(columns=expected_cols)
+else:
+    anoms = pd.read_csv(anomalies_path)
+
 missing = [c for c in expected_cols if c not in anoms.columns]
 if missing:
     st.error(f"Missing expected columns in anomalies CSV: {missing}")
