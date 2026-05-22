@@ -7,9 +7,7 @@ from datetime import timedelta, date
 import pandas as pd
 import plotly.express as px
 
-# --- Page + styling (applies the "card" look)
-st.set_page_config(layout="wide")
-st.markdown("""
+DASHBOARD_STYLES = """
 <style>
 .card {
   background: white;
@@ -26,9 +24,9 @@ h1, h2, h3 { margin: 0.1rem 0 0.6rem 0; }
   background: #F3F4F6; font-weight:600; margin-right:8px;
 }
 </style>
-""", unsafe_allow_html=True)
+"""
 
-st.markdown("""
+DASHBOARD_DARK_STYLES = """
 <style>
 /* Default: light mode → black text */
 .card-title,
@@ -46,11 +44,12 @@ st.markdown("""
     }
 }
 </style>
-""", unsafe_allow_html=True)
+"""
 
 
 # This function makes a dashbaord given a brand and name
 def make_dashboard(brand, name, end_date=None):
+    st.markdown(DASHBOARD_STYLES + DASHBOARD_DARK_STYLES, unsafe_allow_html=True)
     brand = brand.replace("(no brand)", '')
     prices = get_prices(brand, name, end_date=end_date)
     #st.write(prices)
@@ -64,6 +63,7 @@ def make_dashboard(brand, name, end_date=None):
 
     if prices.empty:
         st.warning("No valid prices to show.")
+        return
     else:
         #get the current data
         hist = prices.sort_values("date")

@@ -1,113 +1,35 @@
 
 #all_dashboard.py
 # This creates the overall Streamlit site
-import os
 import glob
-from datetime import datetime
-import requests
 import re
-from io import BytesIO
 from single_dashboard import make_dashboard
+from get_prices import LAST_PRICE_DATE, get_window_path, load_price_window
 import pandas as pd
 import streamlit as st
-from PIL import Image
 from pathlib import Path
-BASE_DIR = Path(__file__).resolve().parents[1] / "data" 
 
-
-#This is the URL for the logo
-url = "https://play-lh.googleusercontent.com/m3a7lbOgH4dSrn1eP5MvXef0MiWlnR_4B6zvsuyrvUxTgS4WC-jI2pd8FN5E-PL0tQ=w240-h480-rw"
-response = requests.get(url)
-icon = Image.open(BytesIO(response.content))
 
 #Set the page config
 st.set_page_config(
     page_title="Historical Aldi Price Viewer",
-    page_icon=icon,
+    page_icon="A",
     layout="wide",
 )
 
-# Get today's folder for today's data (or yesterday's if today's hasn't uploaded yet)
-def parse_date_folder(folder_name):
-    try:
-        return datetime.strptime(folder_name, "%Y%m%d").date()
-    except ValueError:
-        return None
-
-
-def get_today_folder():
-    return get_available_snapshots()[0]["folder"]
-    today = date.today()
-    today_str = today.strftime("%Y%m%d")
-    today_folder = os.path.join(BASE_DIR, today_str)
-
-    if os.path.isdir(today_folder):
-        # Today’s folder exists
-        st.header(f"Data last updated: {today.strftime('%B %d, %Y')}")
-        return today_folder
-
-    # Fall back to yesterday if today's folder doesn't exist
-    yesterday = today - timedelta(days=1)
-    yesterday_str = yesterday.strftime("%Y%m%d")
-    yesterday_folder = os.path.join(BASE_DIR, yesterday_str)
-
-    if os.path.isdir(yesterday_folder):
-        st.header(f"Data last updated: {yesterday.strftime('%B %d, %Y')}")
-        return yesterday_folder
-
 # Find the CSV (e.g. combined_20251224_to_20260123.csv) given a prefix (e.g. combined)
 def find_csv_with_prefix(folder, prefix):
-    pattern = os.path.join(folder, f"{prefix}*.csv")
+    pattern = str(Path(folder) / f"{prefix}*.csv")
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
 
-def csv_has_data(path):
-    with open(path, "rb") as f:
-        for line_count, _ in enumerate(f, start=1):
-            if line_count > 1:
-                return True
-    return False
-
-
-def get_latest_data_date(path):
-    try:
-        dates = pd.read_csv(path, usecols=["date"], parse_dates=["date"])["date"].dropna()
-    except Exception:
-        return None
-    if dates.empty:
-        return None
-    return dates.max().date()
-
-
-def get_available_snapshots():
-    snapshots_by_date = {}
-    for folder in sorted(BASE_DIR.iterdir(), key=lambda p: p.name, reverse=True):
-        if not folder.is_dir():
-            continue
-        if parse_date_folder(folder.name) is None:
-            continue
-        combined_path = find_csv_with_prefix(str(folder), "combined")
-        if combined_path and csv_has_data(combined_path):
-            data_date = get_latest_data_date(combined_path)
-            if data_date is None or data_date in snapshots_by_date:
-                continue
-            snapshots_by_date[data_date] = {
-                "date": data_date,
-                "folder": str(folder),
-                "combined_path": combined_path,
-            }
-    return [
-        snapshots_by_date[data_date]
-        for data_date in sorted(snapshots_by_date, reverse=True)
-    ]
-
-
-snapshots = get_available_snapshots()
-
-if not snapshots:
-    st.error(f"No historical combined CSVs with data found in {BASE_DIR}.")
-    st.stop()
+window_path = get_window_path(LAST_PRICE_DATE)
+snapshots = [{
+    "date": LAST_PRICE_DATE,
+    "folder": str(window_path.parent),
+    "combined_path": str(window_path),
+}]
 
 snapshot_options = {
     snapshot["date"].strftime("%B %d, %Y"): snapshot
@@ -130,20 +52,7 @@ if combined_path is None:
     st.error(f"No combined CSV found in {folder_today} (expected file starting with 'combined').")
     st.stop()
 
-# Read combined data
-combined = pd.read_csv(combined_path)
-
-# Clean up price and date
-if "price" in combined.columns:
-    combined["price"] = (
-        combined["price"]
-        .astype(str)
-        .str.replace(r"[$,]", "", regex=True)
-        .astype(float)
-    )
-
-if "date" in combined.columns:
-    combined["date"] = pd.to_datetime(combined["date"]).dt.date
+combined = load_price_window(snapshot_date.strftime("%Y%m%d"))
 
 # Make a display column for search
 for col in ["brand", "name"]:
